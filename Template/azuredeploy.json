@@ -29,6 +29,7 @@
         "region": {
             "type": "string",
             "allowedValues": [
+                "AU",
                 "EU",
                 "US"
             ],
