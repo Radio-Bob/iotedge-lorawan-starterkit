@@ -7,11 +7,14 @@ else
     if [ "$REGION" == "US" ]; then
         echo "US region detected." 
         cp global_conf.us.json global_conf.json 
+    elif [ "$REGION" == "EU" ]; then
+        echo "EU region detected." 
+        cp global_conf.eu.json global_conf.json 
+    elif [ "$REGION" == "AU" ]; then 
+        echo "AU region detected."
+        cp global_conf.au.json global_conf.json
     else
-        if [ "$REGION" == "EU" ]; then
-            echo "EU region detected." 
-            cp global_conf.eu.json global_conf.json 
-        fi
+        echo "INVALID region detected."
     fi
 fi
 
