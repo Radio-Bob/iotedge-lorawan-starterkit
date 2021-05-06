@@ -35,6 +35,10 @@ namespace LoRaTools.Regions
                 case LoRaRegionType.US915:
                     region = US915;
                     return true;
+                    
+                case LoRaRegionType.AU915:
+                    region = AU915;
+                    return true;                    
             }
 
             return false;
